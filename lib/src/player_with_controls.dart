@@ -32,7 +32,8 @@ class PlayerWithControls extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           chewieController.placeholder ?? Container(),
-          Center(
+          Positioned(
+            bottom: 0,
             child: AspectRatio(
               aspectRatio: chewieController.aspectRatio ??
                   _calculateAspectRatio(context),
