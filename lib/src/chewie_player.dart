@@ -83,7 +83,7 @@ class ChewieState extends State<Chewie> {
       resizeToAvoidBottomPadding: false,
       body: Container(
         alignment: Alignment.center,
-        color: Colors.black,
+        color: Colors.white,
         child: controllerProvider,
       ),
     );
