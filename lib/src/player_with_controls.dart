@@ -30,10 +30,10 @@ class PlayerWithControls extends StatelessWidget {
       ChewieController chewieController, BuildContext context) {
     return Container(
       child: Stack(
+        alignment: Alignment.bottomCenter,
         children: <Widget>[
           chewieController.placeholder ?? Container(),
-          Positioned(
-            bottom: 0,
+          Center(
             child: AspectRatio(
               aspectRatio: chewieController.aspectRatio ??
                   _calculateAspectRatio(context),
